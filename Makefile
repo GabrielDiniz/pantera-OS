@@ -8,7 +8,7 @@ build:
 	@ld -T link.ld -o kernel.bin gdt.o start.o main.o scrn.o idt.o isrs.o irq.o timer.o kb.o
 	@mkdir -p /tmp/so
 	@sudo mount -o loop ../floppy.img /tmp/so
-	@cp kernel.bin /tmp/so
+	@sudo cp kernel.bin /tmp/so
 	@sudo umount /tmp/so
 	@qemu -fda ../floppy.img -boot a
 	@rm -f *.o
