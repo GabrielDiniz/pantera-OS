@@ -46,6 +46,7 @@ extern void irq_install();
 /* TIMER.C */
 extern void timer_install();
 extern void timer_wait(int ticks);
+extern int ReadFromCMOS();
 
 /* KB.C */
 extern void keyboard_install();

@@ -92,7 +92,7 @@ int main()
 	
 	init_video();
 	int a;
-	
+
 	settextcolor(WHITE,BLACK);
 	box(2,2,24,75);
 	
